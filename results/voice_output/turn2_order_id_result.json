@@ -1,0 +1,29 @@
+{
+  "session_id": "batch_session",
+  "input_audio": "data\\audio_samples\\turn2_order_id.wav",
+  "customer_transcript": "the order number is 89782837",
+  "agent_reply_text": "Thank you for providing your order number. To help me verify your account, could you please share the last 4 digits of your registered phone number?",
+  "spoken_text": "Thank you for providing your order number. To help me verify your account, could you please share the last 4 digits of your registered phone number?",
+  "decision": "clarify",
+  "tool_calls": [
+    {
+      "tool": "lookup_order",
+      "args": {
+        "order_id": "89782837"
+      },
+      "result": {
+        "verification_required": true,
+        "order_id": "89782837",
+        "message": "Ask for the registered phone last 4 digits OR delivery pincode."
+      },
+      "call_str": "lookup_order(order_id=89782837)"
+    }
+  ],
+  "retrieved_evidence": [],
+  "output_audio_path": "results\\voice_output\\turn2_order_id_reply.wav",
+  "stt_latency_seconds": 0.709,
+  "llm_latency_seconds": 0.846,
+  "tts_latency_seconds": 1.351,
+  "total_latency_seconds": 2.932,
+  "error": null
+}

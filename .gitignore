@@ -1,0 +1,29 @@
+# Environment variables and secrets
+.env
+*.env
+*.key
+*.pem
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Scratch & IDE
+.vscode/
+.idea/
+scratch/
+pdf_text_dump.txt
+*.log
+
+# Distribution and packaging
+dist/
+build/
+*.egg-info/
+team_name_voiceops.zip

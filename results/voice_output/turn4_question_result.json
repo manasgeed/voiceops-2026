@@ -1,0 +1,26 @@
+{
+  "session_id": "batch_session",
+  "input_audio": "data\\audio_samples\\turn4_question.wav",
+  "customer_transcript": "managentro vista 43 inch four k smart tv damage report kiya tha abhi replacement approved car dona",
+  "agent_reply_text": "I see you are inquiring about the damaged Zentro Vista 43-inch 4K Smart TV in your order. Since the item is valued above \u20b910,000, I have escalated this issue and created a support ticket for you. A human colleague will connect with you shortly to assist further.",
+  "spoken_text": "I see you are inquiring about the damaged Zentro Vista 43-inch 4K Smart TV in your order. Since the item is valued above ten thousand rupees, I have escalated this issue and created a support ticket for you. A human colleague will connect with you shortly to assist further.",
+  "decision": "escalate",
+  "tool_calls": [
+    {
+      "tool": "create_ticket",
+      "args": {},
+      "result": {
+        "created": true,
+        "ticket_id": "TKT4d8c85c55fbb4b44841b46c4bef4bc25"
+      },
+      "call_str": "create_ticket()"
+    }
+  ],
+  "retrieved_evidence": [],
+  "output_audio_path": "results\\voice_output\\turn4_question_reply.wav",
+  "stt_latency_seconds": 0.873,
+  "llm_latency_seconds": 1.018,
+  "tts_latency_seconds": 2.608,
+  "total_latency_seconds": 4.506,
+  "error": null
+}
