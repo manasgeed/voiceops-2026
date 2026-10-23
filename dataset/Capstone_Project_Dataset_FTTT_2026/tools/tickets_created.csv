@@ -51,3 +51,11 @@ TKTe348ee3463c24f3fa693fb36f89afb2d,2026-10-23T22:49:58,37113676,agent_handover,
 TKT4dc7661f4a49467792cdcfc6adf62091,2026-10-23T22:50:09,45011817,repeat_contact,repeat_contact,Customer contacting for the third time regarding order 45011817. Escalating per repeat contact policy.
 TKTdd925f9cf5a749e18fe361e9057d73f6,2026-10-23T22:52:13,89782837,,high_value_damage,"Customer reported damaged television exceeding INR 10,000 threshold."
 TKT4fe70d1ca48c49eb9d668f7a51510f9a,2026-10-23T22:53:57,89782837,agent_handover,human_requested,Customer requested to speak with a human support colleague regarding order 89782837.
+TKTe52eeec783ba4978a94e4eb3c1d27045,2026-10-23T23:04:10,89782837,agent_handover,human_requested,Customer requested to speak with a human support colleague regarding order 89782837.
+TKT25b3acafc1b2455b80f199ee8616fa64,2026-10-23T23:05:59,89782837,,high_value_damage,"Customer reported damaged television exceeding INR 10,000 threshold."
+TKT2edba38dfa0d4b47b418f15b27904533,2026-10-23T23:05:59,89782837,,,Short text | Checks performed and escalated per ZentroMart policy.
+TKT4be34215c899499097e2081f382dc722,2026-10-23T23:06:10,89782837,damaged_item,high_value_damage,"Customer reported damaged high-value product (Zentro Vista 43-inch 4K Smart TV) exceeding INR 10,000 threshold. Escalating for specialist review."
+TKTcb62fb80eac44ee988048c487157f9b3,2026-10-23T23:06:21,37113676,agent_handover,human_requested,Customer requested to speak with a human support colleague regarding order 37113676.
+TKT0d24efecb680447fa91796486f6c99a3,2026-10-23T23:06:32,45011817,repeat_contact,repeat_contact,Customer contacting for the third time regarding order 45011817. Escalating per repeat contact policy.
+TKTab722c3bbedd4a639688ce342379bc2b,2026-10-23T23:08:35,89782837,,high_value_damage,"Customer reported damaged television exceeding INR 10,000 threshold."
+TKT7a4f794e5f8b404c9d9ccafdcac8de9a,2026-10-23T23:09:30,89782837,agent_handover,human_requested,Customer requested to speak with a human support colleague regarding order 89782837.

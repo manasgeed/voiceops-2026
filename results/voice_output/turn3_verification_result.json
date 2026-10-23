@@ -2,8 +2,8 @@
   "session_id": "batch_session",
   "input_audio": "data\\audio_samples\\turn3_verification.wav",
   "customer_transcript": "the last four digits of 4,533",
-  "agent_reply_text": "Thank you for verifying your details, Kabir. Your order number 89782837 was successfully delivered on 15 October 2026. How can I assist you further with this order today?",
-  "spoken_text": "Thank you for verifying your details, Kabir. Your order number 8978 2837 was successfully delivered on the 15th of October 2026. How can I assist you further with this order today?",
+  "agent_reply_text": "Thank you for verifying your details, Kabir! Your identity has been successfully confirmed. How may I assist you with your order today?",
+  "spoken_text": "Thank you for verifying your details, Kabir! Your identity has been successfully confirmed. How may I assist you with your order today?",
   "decision": "answer",
   "tool_calls": [
     {
@@ -102,9 +102,9 @@
   ],
   "retrieved_evidence": [],
   "output_audio_path": "results\\voice_output\\turn3_verification_reply.wav",
-  "stt_latency_seconds": 0.678,
-  "llm_latency_seconds": 4.849,
-  "tts_latency_seconds": 1.944,
-  "total_latency_seconds": 7.479,
+  "stt_latency_seconds": 1.018,
+  "llm_latency_seconds": 14.543,
+  "tts_latency_seconds": 1.637,
+  "total_latency_seconds": 17.2,
   "error": null
 }

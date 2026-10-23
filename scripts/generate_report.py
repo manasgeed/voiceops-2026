@@ -525,7 +525,7 @@ def build_pdf_report(output_path: str = "report.pdf"):
         Paragraph(
             "Per page 12 of the VoiceOps Capstone Brief, speech operations strictly mandate Gnani.ai services without third-party engines. "
             "Our pipeline connects directly to official endpoints at <code>https://api.vachana.ai</code>, utilizing <b>Prisma v2.5</b> for ASR "
-            "and <b>Timbre v2.5</b> (voice: <code>Kaveri</code>) for expressive neural speech synthesis.",
+            "and <b>Timbre v2.5</b> (model parameter: <code>timbre-v2.5</code>, voice: <code>Kaveri</code>) for expressive neural speech synthesis.",
             body_style,
         )
     )
