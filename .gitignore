@@ -35,3 +35,11 @@ submission_package/
 dataset/
 data/
 results/
+
+# Internal drafts, course brief, and maintenance scripts
+docs/
+scripts/
+VoiceOps_2026_Capstone_Brief.pdf
+OPEN_QUESTIONS_AND_RISKS.md
+FINAL_REPORT.md
+DEMO_VIDEO_SCRIPT.md
