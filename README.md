@@ -1,8 +1,10 @@
 # VoiceOps 2026: ZentroMart Customer Support Agent
 
-An enterprise-grade, multi-stage conversational AI agent built for **ZentroMart**, an Indian online store selling electronics, groceries, fashion, and home goods.
+**GitHub Repository:** https://github.com/manasgeed/voiceops-2026  
+**Author:** Manas Geed  
+**Course:** From Tokens to Transformers: A Course on GenAI × LLM Mastery (Consulting & Analytics Club, IIT Guwahati × Gnani.ai)  
 
-Developed as a capstone project for *From Tokens to Transformers: A Course on GenAI × LLM Mastery* (Consulting & Analytics Club, IIT Guwahati × Gnani.ai).
+An enterprise-grade, multi-stage conversational AI agent built for **ZentroMart**, an Indian online store selling electronics, groceries, fashion, and home goods.
 
 ---
 
@@ -15,7 +17,7 @@ Developed as a capstone project for *From Tokens to Transformers: A Course on Ge
 | **Stage 2 Grounded RAG**| **Milestone 2** | Precedence-aware hybrid retrieval, document grounding, citation tracking | **COMPLETED** (52/52 evaluated on Gemini; 76.9% decision, 55.8% fact recall) |
 | **Stage 3 Agent & Tools**| **Milestone 3** | Multi-turn stateful agent, ID verification gate (1 retry limit), mock tools, escalation tickets | **COMPLETED** (23 convs/96 turns evaluated on Gemini; 97.9% decision, 99.0% tools, 95.8% fact recall) |
 | **Stage 4 Speech AI** | **Milestone 4** | Gnani STT (Prisma v2.5) and TTS (`timbre-v2.5` / `v3.0`), voice formatting [STY-3], batch audio CLI | **COMPLETED** (12/12 tests passing; live STT/TTS roundtrip & batch CLI verified) |
-| **Stage 5 Packaging** | **Milestone 5** | Regression testing (67/67 passed), 4-page report (`report.pdf`), 2-min demo script (`demo.mp4`) | **IN PROGRESS** |
+| **Stage 5 Packaging** | **Milestone 5** | Regression testing (67/67 passed), 4-page report (`report.pdf`), 2-min demo (`demo.mp4`), submission archive | **COMPLETED** |
 
 ---
 
@@ -202,15 +204,15 @@ flowchart LR
 ### Reproducible Batch Audio CLI Execution
 Process a folder of input WAV clips and generate reply speech, JSON trace logs, and a summary manifest:
 ```bash
-python run.py --input-dir data/audio_samples --output-dir results/voice_output
+python run.py --input_dir data/audio_samples --output_dir results/voice_output
 ```
-CLI Options:
-* `--input-dir`: Directory containing customer `.wav` audio files.
-* `--output-dir`: Output directory for generated speech (`<stem>_reply.wav`), JSON trace (`<stem>_result.json`), and `batch_manifest.csv`.
+CLI Options (supports both underscore and hyphenated syntax):
+* `--input_dir` / `--input-dir`: Directory containing customer `.wav` audio files.
+* `--output_dir` / `--output-dir`: Output directory for generated speech (`<stem>_reply.wav`), JSON trace (`<stem>_result.json`), and `batch_manifest.csv`.
+* `--session_id` / `--session-id`: Conversation session identifier for tracking state across turns.
 * `--model`: TTS model version (`timbre-v2.5` default, or `timbre-v3.0`).
 * `--voice`: TTS voice persona (`Kaveri` default).
 * `--language`: ASR language model (`en-IN` default, `hi-IN`).
-* `--mock`: Run without live API credentials for testing/CI.
 
 ### Voice Speech Formatting Rules (`[STY-3]`)
 * **Spoken Conciseness:** Formatted into 2 to 3 concise, natural spoken sentences.

@@ -185,7 +185,7 @@ def build_pdf_report(output_path: str = "report.pdf"):
     # Metadata block
     meta_data = [
         [
-            Paragraph("<b>Author:</b> Antigravity Autonomous Pair", table_cell_style),
+            Paragraph("<b>Author:</b> Manas Kumar Geed", table_cell_style),
             Paragraph("<b>Reference Date:</b> 2026-10-20", table_cell_style),
             Paragraph("<b>LLM Backend:</b> Gemini 3.5 Flash Lite", table_cell_style),
             Paragraph("<b>Speech AI:</b> Gnani Prisma v2.5 / Timbre v2.5", table_cell_style),

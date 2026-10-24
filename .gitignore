@@ -26,4 +26,12 @@ pdf_text_dump.txt
 dist/
 build/
 *.egg-info/
+*.zip
 team_name_voiceops.zip
+manasgeed_voiceops.zip
+submission_package/
+
+# Local raw dataset and heavy results (kept in sample_outputs/ for submission)
+dataset/
+data/
+results/

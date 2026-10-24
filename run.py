@@ -131,9 +131,9 @@ def run_batch_audio_pipeline(
 
 def main():
     parser = argparse.ArgumentParser(description="VoiceOps 2026 Batch Audio Processor.")
-    parser.add_argument("--input-dir", type=str, default="data/audio_samples", help="Input directory of customer WAV files.")
-    parser.add_argument("--output-dir", type=str, default="results/voice_output", help="Output directory for generated speech & results.")
-    parser.add_argument("--session-id", type=str, default="batch_session", help="Session ID for state tracking.")
+    parser.add_argument("--input-dir", "--input_dir", dest="input_dir", type=str, default="data/audio_samples", help="Input directory of customer WAV files.")
+    parser.add_argument("--output-dir", "--output_dir", dest="output_dir", type=str, default="results/voice_output", help="Output directory for generated speech & results.")
+    parser.add_argument("--session-id", "--session_id", dest="session_id", type=str, default="batch_session", help="Session ID for state tracking.")
     parser.add_argument("--language", type=str, default=DEFAULT_STT_LANGUAGE, help="Language code (e.g. en-IN, hi-IN).")
     parser.add_argument("--voice", type=str, default=DEFAULT_TTS_VOICE, help="TTS voice name (e.g. Kaveri).")
     parser.add_argument("--model", type=str, default=DEFAULT_TTS_MODEL, help="TTS model (timbre-v2.5 or timbre-v3.0).")
